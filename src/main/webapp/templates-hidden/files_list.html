@@ -1,0 +1,68 @@
+<div>
+  <div data-lift="FilesPage.ifEmpty">
+    <p class="text-primary">You haven't uploaded any files yet!</p>
+  </div>
+  <div data-lift="FilesPage.ifNotEmpty">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr data-lift="FilesPage.paginate">
+            <th><sort:name>Name</sort:name>&nbsp;<hintalpha:name/></th>
+            <th><sort:size>Size</sort:size>&nbsp;<hintnum:size/></th>
+            <th><sort:date>Upload Date</sort:date>&nbsp;<hintnum:date/></th>
+            <th>Archive</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody data-lift="FilesPage">
+        <tr>
+          <td>
+            <a role="filename" href="#">DicomStackFile.dcm</a>
+          </td>
+          <td role="length">100Kb</td>
+          <td role="uploadDate">September 15, 2013</td>
+          <td>
+            <a role="archive" title="Archive Contents" href="#">
+              <i class="fa fa-file-archive-o"></i>
+            </a>
+          </td>
+          <td>
+            <div class="pull-right">
+              <span role="version" class="label label-success" title="Import Version">0</span>
+              <a role="decompose" title="Read as DICOM" href="#">
+                <i class="fa fa-cog"></i>
+              </a>
+            </div>
+          </td>
+          <td>
+            <a role="tags" class="pull-right" title="View Tags" href="#">
+              <i class="fa fa-external-link"></i>
+            </a>
+          </td>
+          <td>
+            <a role="download" class="pull-right" title="Download" href="#">
+              <i class="fa fa-download"></i>
+            </a>
+          </td>
+          <td>
+            <input role="remove" type="checkbox"></input>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div data-lift="FilesPage.paginate">
+      <ul class="pagination">
+        <nav:first></nav:first>
+        <nav:zoomedpages></nav:zoomedpages>
+        <nav:last></nav:last>
+      </ul>
+      <p class="pull-right">
+      <nav:records></nav:records>
+      </p>
+    </div>
+  </div>
+</div>

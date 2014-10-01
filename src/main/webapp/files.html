@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="static/css/app.css" rel="stylesheet" media="screen">
+  </head>
+  <body class="lift:content_id=main">
+
+    <div id="main" data-lift="surround?with=default;at=content">
+
+      <h2>Files</h2>
+
+      <hr>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <form class="pull-right" data-lift="FilesRemove?form=post">
+            <button role="undo" class="btn btn-link" title="Undo remove">
+              <i class="fa fa-undo"></i>
+            </button>
+            <button role="remove" class="btn btn-danger" title="Remove selected">
+              <i class="fa fa-trash-o"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <lift:embed what="templates-hidden/files_list">
+        This should be replaced with the files list
+      </lift:embed>
+
+    </div>
+
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

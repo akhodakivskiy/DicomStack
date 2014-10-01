@@ -1,0 +1,73 @@
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-id">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a data-lift="BootstrapMenu.item?name=Home" class="navbar-brand" href="#">
+      <span role="locTitle">Home</span>
+    </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="navbar-collapse-id" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li data-lift="BootstrapMenu.item?name=Library">
+        <a href="#" title="Library">
+          <i class="fa fa-list"></i>
+          <span role="locTitle">Library</span>
+        </a>
+      </li>
+      <li data-lift="BootstrapMenu.item?name=Files">
+        <a href="#" title="Files">
+          <i class="fa fa-hdd-o"></i>
+          <span role="locTitle">Files</span>
+        </a>
+      </li>
+    </ul>
+
+    <form data-lift="IgnoreSearch" class="navbar-form navbar-left" role="search">
+      <div data-lift="SearchSnips" class="input-group search-input-group">
+        <input role="searchTerm" type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+          <a role="reset" href="#" class="btn btn-default" title="Clear Search">
+            <i class="fa fa-times"></i>
+          </a>
+          <button class="btn btn-default" type="submit" role="search" title="Search">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li data-lift="BootstrapMenu.item?name=Login">
+        <a title="Login" href="#">
+          <span role="locTitle">Login</span>
+          <i class="fa fa-sign-in"></i>
+        </a>
+      </li>
+      <li data-lift="BootstrapMenu.item?name=Sign+Up">
+        <a title="Sign Up" href="#">
+          <strong role="locTitle">Sign Up</strong>
+        </a>
+      </li>
+      <li data-lift="BootstrapMenu.item?name=Profile">
+        <a href="#">
+          <i class="fa fa-user"></i>
+          <span role="locTitle">Profile</span>
+        </a>
+      </li>
+      <li data-lift="BootstrapMenu.item?name=Sign+Out">
+        <a title="Sign Out" href="#">
+          <span role="locTitle">Sign Out</span>
+          <i class="fa fa-sign-out"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+

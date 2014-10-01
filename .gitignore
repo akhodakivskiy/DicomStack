@@ -1,0 +1,12 @@
+target
+console.devmode.log
+.history
+.cache
+.classpath
+.project
+.settings
+.idea
+.idea_modules
+lib/libclib_jiio.so
+src/main/resources/rebel.xml
+src/main/resources/props/default.props

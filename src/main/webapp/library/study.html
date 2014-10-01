@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../static/css/app.css" rel="stylesheet" media="screen">
+  </head>
+  <body class="lift:content_id=main">
+
+    <div id="main" data-lift="surround?with=default;at=content">
+
+      <ol data-lift="BootstrapBreadcrumbs"></ol>
+
+      <h2><span data-lift="StudySnips.name">Pre Operational</span> <small>Study</small></h2>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Study Details</h3>
+            </div>
+            <table data-lift="StudySnips.details" class="table table-condensed">
+              <tr><th>Patient Name</th><td role="patientName">CT</td></tr>
+              <tr><th>Modality</th><td role="modality">CT</td></tr>
+              <tr><th>Date</th><td role="date">Aprit 1st 1986</td></tr>
+            </table>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Series</h3>
+            </div>
+              <div class="list-group" data-lift="StudySnips.series">
+                <a role="series" href="#" class="list-group-item">
+                  <span role="seriesImagesCount" class="badge">14</span>
+                  <b role="seriesDescription">Series Name</b>
+                </a>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-md-9 min-height-512">
+          <div data-lift="StudySnips.sizes" class="btn-group padding-bottom-12 pull-right">
+            <button role="small" type="button" class="btn btn-default" title="Small Thumbnails">
+              <i class="hidden-sm fa fa-th"></i>
+              <i class="visible-sm fa-th-large"></i>
+            </button>
+            <button role="large" type="button" class="btn btn-default" title="Large Thumbnails">
+              <span class="hidden-sm fa fa-th-large"></span>
+              <span class="visible-sm fa fa-square"></span>
+            </button>
+          </div>
+          <div class="clearfix"></div>
+          <div class="row" data-lift="StudySnips.images">
+            <div class="col-md-6" role="image">
+              <a href="#" class="thumbnail">
+                <img class="study-image" alt="image name"></img>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

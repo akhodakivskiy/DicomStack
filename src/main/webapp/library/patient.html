@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>Patient</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="static/css/app.css" rel="stylesheet" media="screen">
+  </head>
+  <body class="lift:content_id=main">
+
+    <div id="main" data-lift="surround?with=default;at=content">
+
+      <ol data-lift="BootstrapBreadcrumbs"></ol>
+
+      <h2>
+        <span data-lift="PatientSnips.name">John Doe</span>
+        <small>Patient</small>
+      </h2>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">Patient Details</div>
+            <table data-lift="PatientSnips.details" class="table table-condensed">
+              <tr>
+                <th>Full Name</th><td role="fullName">Anton Khodakivskiy</td>
+              </tr>
+              <tr>
+                <th>Sex</th><td role="sex">Male</td>
+              </tr>
+              <tr>
+                <th>Date of Birth</th><td role="dateOfBirth">April 1st 1986</td>
+              </tr>
+              <tr>
+                <th>Patient Identifier</th><td role="id">265443</td>
+              </tr>
+              <tr>
+                <th>Identifier Issuer</th><td role="idIssuer">HJD</td>
+              </tr>
+              <tr>
+                <th>Address</th><td role="address">306E 15th street</td>
+              </tr>
+              <tr>
+                <th>Phone Number</th><td role="phone">646 217 9550</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="panel panel-default">
+            <div class="panel-heading">Studies</div>
+            <div data-lift="PatientStudiesPage.ifEmpty">
+              <div class="panel-body">
+                <p>This Patient doesn't have any Studies</p>
+              </div>
+            </div>
+            <table data-lift="PatientStudiesPage.ifNotEmpty" class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Date</th>
+                  <th>Modality</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-lift="PatientStudiesPage">
+                  <td role="index">1</td>
+                  <td role="description">
+                    <a href="#">L SPINE</a>
+                  </td>
+                  <td role="date">April 1st 1986</td>
+                  <td role="modality">CR</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+    </div>
+
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

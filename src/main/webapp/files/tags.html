@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="static/css/app.css" rel="stylesheet" media="screen">
+  </head>
+  <body class="lift:content_id=main">
+
+    <div id="main" data-lift="surround?with=default;at=content">
+
+      <h1>DICOM Tags</h1>
+
+      <hr>
+
+      <div class="panel panel-default table-responsive">
+        <div class="panel-heading">
+          <h3 class="panel-title" data-lift="FileName">FileName.dcm</h3>
+        </div>
+        <table class="table table-responsive">
+          <thead>
+            <tr data-lift="TagsPage.paginate">
+              <th><sort:tag>Tag</sort:tag></th>
+              <th><sort:name>Name</sort:name></th>
+              <th><sort:value>Value</sort:value></th>
+              <th><sort:vr>VR</sort:vr></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-lift="TagsPage">
+              <td>
+                <span role="tagGroup">0016</span>
+                <span role="tagElement">0016</span>
+              </td>
+              <td role="tagName">Patient Name</td>
+              <td role="tagValue">ANTON^KHODAKIVSKIY</td>
+              <td role="tagVR">PN</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,23 @@
+aws.access.key=
+aws.secret.key=
+
+storage.s3.bucket=
+storage.local.folder=/tmp
+storage=local
+
+thread.pool.size=10
+
+connectionTestQuery=SELECT 1
+dataSourceClassName=org.postgresql.ds.PGSimpleDataSource
+dataSource.user=dicomstack
+dataSource.password=dicomstack
+dataSource.databaseName=dicomstack
+dataSource.serverName=localhost
+
+mail.transport.protocol=
+mail.smtp.host=
+mail.smtp.port=
+mail.smtp.starttls.enable=true
+mail.smtp.auth=true
+mail.user=
+mail.password=

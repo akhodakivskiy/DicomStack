@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="static/css/app.css" rel="stylesheet" media="screen">
+  </head>
+  <body class="lift:content_id=main">
+
+    <div id="main" data-lift="surround?with=default;at=content">
+      <div>
+
+        <ol data-lift="BootstrapBreadcrumbs"></ol>
+
+        <h2>Image <small role="fileName">file.dcm</small></h2>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Patient</h3>
+              </div>
+              <table class="table table-responsive">
+                <tbody data-lift="ImageDetails.renderPatient">
+                  <tr>
+                    <td><strong>Name</strong></td>
+                    <td role="patientName">Anton Khodakivskiy</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Sex</strong></td>
+                    <td role="patientSex">Anton Khodakivskiy</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Identifier</strong></td>
+                    <td role="patientIdentifier">HD234567654</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Date of Birth</strong></td>
+                    <td role="patientBirthDate">April 1st 2013</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Study</h3>
+              </div>
+              <table class="table table-responsive">
+                <tbody data-lift="ImageDetails.renderStudy">
+                  <tr>
+                    <td><strong>Description</strong></td>
+                    <td role="studyDescription">Study Description</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Instance UID</strong></td>
+                    <td role="studyInstanceUid">234.234.45.234</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Date</strong></td>
+                    <td role="studyDate">Yesterday</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Series</h3>
+              </div>
+              <table class="table table-responsive">
+                <tbody data-lift="ImageDetails.renderSeries">
+                  <tr>
+                    <td><strong>Description</strong></td>
+                    <td role="seriesDescription">Series Description</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Instance UID</strong></td>
+                    <td role="seriesInstanceUid">67.676.5342.345654</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Date</strong></td>
+                    <td role="seriesDate">Yesterday</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Number</strong></td>
+                    <td role="seriesNumber">2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Image</h3>
+              </div>
+              <table class="table table-responsive">
+                <tbody data-lift="ImageDetails.renderImage">
+                  <tr>
+                    <td><strong>Instance Number</strong></td>
+                    <td role="imageInstanceNumber">3</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Dimensions</strong></td>
+                    <td>
+                      <span role="imageRows">256</span>
+                      <span role="imageColumns">256</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Transfer Syntax</strong></td>
+                    <td role="imageTransferSyntax">34.34.34</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="well">
+          <img data-lift="FullImage" src="#" class="img-responsive">
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
